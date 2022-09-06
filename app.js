@@ -15,18 +15,26 @@ app.set('view engine', 'hbs');
 app.engine('hbs', handlebars.engine({
   layoutsDir: __dirname + '/views/layouts',
   extname: 'hbs',
-  defaultLayout: 'planB',
+  defaultLayout: 'index.hbs',
   partialsDir: __dirname + '/views/partials/'
 }));
 
 //Serves static files
 app.use(express.static('public'))
 
-// //Sets a basic route
+// //Sets routes for pages
 app.get('/', (req, res) => {
   //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
-  res.render('main', {layout : 'index'});
+  res.render('main');
   });
+
+app.get('/about', (req, res) => {
+  res.render('about')
+})
+
+app.get('/projects', (req, res) => {
+  res.render('projects')
+})
 
 //Makes the app listen to port 3000
 app.listen(port, () => console.log('Running at Port 3000'));
