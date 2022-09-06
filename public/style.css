@@ -1,7 +1,7 @@
 :root {
   --heading-font: 'Roboto', sans-serif;;
   --body-font: 'Montserrat', sans-serif;;
-  --primary-color: #020352;
+  --primary-color: #3374b9;
   --secondary-color: #b6c9e2;
   --tertiary-color: #f6f6ae;
 
@@ -9,6 +9,16 @@
 
 body {
   background-color: white;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  margin-left: 120px;
 }
 
 h2 {
@@ -20,4 +30,34 @@ h2 {
 
 p {
   font: var(--body-font);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background-color: #f1f1f1;
+  height: 100%; 
+  position: fixed; 
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+li a.active {
+  background-color: var(--primary-color);
+  color: white;
 }

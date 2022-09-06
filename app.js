@@ -25,7 +25,7 @@ app.use(express.static('public'))
 // //Sets routes for pages
 app.get('/', (req, res) => {
   //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
-  res.render('main');
+  res.render('home');
   });
 
 app.get('/about', (req, res) => {
