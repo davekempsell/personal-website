@@ -16,7 +16,6 @@ app.engine('hbs', handlebars.engine({
   layoutsDir: __dirname + '/views/layouts',
   extname: 'hbs',
   defaultLayout: 'index.hbs',
-  partialsDir: __dirname + '/views/partials/'
 }));
 
 //Serves static files

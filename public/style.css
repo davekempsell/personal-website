@@ -8,11 +8,11 @@
 }
 
 body {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .main-container {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -60,4 +60,33 @@ li a:hover:not(.active) {
 li a.active {
   background-color: var(--primary-color);
   color: white;
+}
+
+.background-image {
+  width: 40%;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  padding: 15px;
+}
+
+.project-cards-container {
+  position: relative;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 2% auto; 
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 3px 2px 2px #bcc4db;
+}
+
+.project-card {
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  height: auto;
+  width: auto;
+  padding: 10px 10px;
+  margin: 2% 2%;
+  box-shadow: 6px 5px 5px #bcc4db;
 }
