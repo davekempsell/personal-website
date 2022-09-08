@@ -93,6 +93,7 @@ li a.active {
   padding: 10px 10px;
   margin: 2% auto; 
   max-width: 800px;
+  min-width: 390px;
   text-align: center;
   box-shadow: 3px 2px 2px #bcc4db;
 }
