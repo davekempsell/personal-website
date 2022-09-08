@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 //Set port to 3000
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //Loads the handlebars module
 const handlebars = require('express-handlebars')
